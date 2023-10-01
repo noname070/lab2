@@ -1,6 +1,11 @@
+package ru.noname.lab2.MyPokemons;
+
 import ru.ifmo.se.pokemon.Move;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
+
+import ru.noname.lab2.Attacks.Rage;
+import ru.noname.lab2.Attacks.HydroPump;
 
 public class Dragonite extends Pokemon{
 

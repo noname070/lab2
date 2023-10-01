@@ -1,5 +1,9 @@
+package ru.noname.lab2;
+
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Battle;
+
+import ru.noname.lab2.MyPokemons.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
