@@ -1,3 +1,4 @@
+
 package ru.noname.lab2;
 
 import ru.ifmo.se.pokemon.Pokemon;
