@@ -1,10 +1,11 @@
-
 package ru.noname.lab2;
 
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Battle;
 
+
 import ru.noname.lab2.MyPokemons.*;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -21,10 +22,13 @@ public class App {
         b.addAlly(T2);
         b.addAlly(T3);
 
-        b.addFoe(G1);
-        b.addFoe(G2);
-        b.addFoe(G3);
+        // b.addFoe(G1);
+        // b.addFoe(G2);
+        // b.addFoe(G3);        
 
-        b.go();
+        // Check teams
+        // b.go();
+        if (BattleController.check(b)) { b.go(); }
     }
 }
+
