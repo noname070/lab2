@@ -8,7 +8,7 @@ import ru.noname.lab2.MyPokemons.*;
 
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Battle b = new Battle();
         Pokemon T1 = new Froslass("ЛЕВИН", 50);
         Pokemon T2 = new Nuzleaf("ПРАВИН", 50);
@@ -22,13 +22,18 @@ public class App {
         b.addAlly(T2);
         b.addAlly(T3);
 
-        // b.addFoe(G1);
-        // b.addFoe(G2);
-        // b.addFoe(G3);        
+        b.addFoe(G1);
+        b.addFoe(G2);
+        b.addFoe(G3);        
 
         // Check teams
         // b.go();
-        if (BattleController.check(b)) { b.go(); }
+        try {
+            if (BattleController.check(b)) { b.go(); }
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 }
 
